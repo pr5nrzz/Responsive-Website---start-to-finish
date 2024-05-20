@@ -1,8 +1,8 @@
 .main-header {
   position: absolute;
-  top: 1em;
   left: 0;
   right: 0;
+  padding-top: 1em;
 }
 
 .logo {
@@ -10,14 +10,4 @@
   width: 25%;
   max-width: 10rem;
   min-width: 10rem;
-}
-
-.main-nav {
-  display: none;
-}
-
-.main-nav .nav__itens {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
