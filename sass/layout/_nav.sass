@@ -21,6 +21,9 @@
             display: flex
             justify-content: center
 
+            @media (min-width: 768px)
+                margin-left: 2em
+
             a
                 color: $text-inverse
                 text-transform: uppercase
@@ -28,9 +31,28 @@
                 flex-basis: 100%
                 text-align: center
                 padding-block: 0.5em
+                transition: all 250ms ease-in-out
 
                 &:hover
                     background-color: rgba(0, 0, 0, 0.1)
+            
+                    @media (min-width: 768px)
+                        background: none
+                        color: darken($accent, 20%)
+
+        @media (min-width: 768px)
+            flex-direction: row
+            justify-content: flex-end
+            height: auto
+            padding-top: 0
+
+    @media (min-width: 768px)
+        position: relative
+        background: none
+        left: 0
+        margin-left: 5%
+
+        flex-grow: 1
 
 // Mobile Navigation
 
@@ -40,6 +62,9 @@
     cursor: pointer
     position: relative
     z-index: 100
+
+    @media (min-width: 768px)
+        display: none
 
 .hamburger,
 .hamburger::before,

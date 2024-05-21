@@ -4,5 +4,18 @@
     padding-block: 8em
     text-align: center
 
-.hero__img
-    display: none
+    @media(min-width: 768px)
+        padding-bottom: 0
+        text-align: left
+
+    & .grid
+        @media(min-width: 768px)
+            flex-flow: row nowrap
+
+    .hero__text
+        @media (min-width: 768px)
+            margin-top: 10vmax
+
+    .hero__img-container
+        @media (min-width: 768px)
+            transform: translateY(4rem)

@@ -2,3 +2,23 @@
     display: flex
     justify-content: space-between
     align-items: center
+    flex-flow: row wrap
+
+.col
+    flex: 0 0 100%
+
+.col--full
+    flex: 0 0 100%
+
+@media(min-width: 768px) 
+    .grid
+        align-items: flex-start
+
+    .col-3
+        flex-basis: 33.3%
+
+    .col-2-3
+        flex-basis: 66.66%
+
+    .col-2
+        flex-basis: 50%
