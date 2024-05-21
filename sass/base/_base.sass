@@ -5,6 +5,7 @@
 
 body
     color: $text-primary
+    text-align: center
 
 img,
 svg,
@@ -13,6 +14,7 @@ video
     display: block
     max-width: 100%
     height: auto
+    margin-inline: auto
 
 ul,
 ol
@@ -27,3 +29,9 @@ a
     width: 90%
     max-width: 75rem
     margin-inline: auto
+
+.lg-screen
+    display: none
+
+    @media(min-width: 768px)
+        display: block
